@@ -29,7 +29,10 @@
     "start": "PORT=3001 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:prod": "docker build -t lorensov/visao-rappel .",
+    "start:prod": "docker run --rm -d -p 80:80 --name lorensov/visao-rappel",
+    "stop:prod": "docker stop visao-rappel"
   },
   "eslintConfig": {
     "extends": "react-app"
