@@ -75,9 +75,10 @@ async function handlePagamento(req, res) {
         await client.query(
           `UPDATE visa_fornecedores SET numero_parcelas_pagas = 1,
            ultima_parcela_paga = '${new Date().toDateString()}',
-           parcelaRappel = '${req.body.input.parcela_rappel}', WHERE cnpj = '${req.body.input.selectedCNPJ}';`,
+           parcela_rappel = '${req.body.input.parcela_rappel}' WHERE cnpj = '${req.body.input.selectedCNPJ}';`,
           (err, results) => {
             if (err) {
+              console.log("@@@@@@@@@" , err);
               return res.send(err);
             } else {
               console.log("deu bom")

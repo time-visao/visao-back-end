@@ -502,3 +502,63 @@
 2019-02-15T12:57:03.958Z - info: signature : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="4txVf2gCFvfITdWpP/Uy81fQ4LwWw5lHOvvKB+fIaI4="
 2019-02-15T12:57:03.958Z - info: User-Agent : Mozilla/5.0
 2019-02-15T12:57:03.958Z - info: END > =========================================
+2019-02-15T13:03:52.859Z - info: START > =======================================
+2019-02-15T13:03:52.862Z - info: Authentication Type : http_signature
+2019-02-15T13:03:52.860Z - warn: Entered log directory does not exists. Taking default log directory ./log
+2019-02-15T13:03:52.863Z - info: Request Type : POST
+2019-02-15T13:03:52.863Z - info: signatureHeader : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="D5BRZi2pWFJFD1+oHPwKaGXwbmeHRUVhY1qQaXbTTG4="
+2019-02-15T13:03:52.863Z - info: digest : SHA-256=7J0BRmDlxfgNS0SuSmWSNKJN6HoIx9YhfZGVqgbSmAM=
+2019-02-15T13:03:52.863Z - info: v-c-merchant-id : rappel_br
+2019-02-15T13:03:52.863Z - info: date : Fri, 15 Feb 2019 13:03:52 GMT
+2019-02-15T13:03:52.863Z - info: host : apitest.cybersource.com
+2019-02-15T13:03:52.863Z - info: signature : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="D5BRZi2pWFJFD1+oHPwKaGXwbmeHRUVhY1qQaXbTTG4="
+2019-02-15T13:03:52.863Z - info: User-Agent : Mozilla/5.0
+2019-02-15T13:03:52.864Z - info: END > =========================================
+2019-02-15T13:04:54.570Z - info: START > =======================================
+2019-02-15T13:04:54.573Z - info: Authentication Type : http_signature
+2019-02-15T13:04:54.571Z - warn: Entered log directory does not exists. Taking default log directory ./log
+2019-02-15T13:04:54.573Z - info: Request Type : POST
+2019-02-15T13:04:54.574Z - info: signatureHeader : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="1x7cJt4NHYme7V5xHQ8NUFdAVU4XL6qjNSHYmsop5mU="
+2019-02-15T13:04:54.574Z - info: digest : SHA-256=7J0BRmDlxfgNS0SuSmWSNKJN6HoIx9YhfZGVqgbSmAM=
+2019-02-15T13:04:54.574Z - info: v-c-merchant-id : rappel_br
+2019-02-15T13:04:54.574Z - info: date : Fri, 15 Feb 2019 13:04:54 GMT
+2019-02-15T13:04:54.574Z - info: host : apitest.cybersource.com
+2019-02-15T13:04:54.575Z - info: signature : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="1x7cJt4NHYme7V5xHQ8NUFdAVU4XL6qjNSHYmsop5mU="
+2019-02-15T13:04:54.575Z - info: User-Agent : Mozilla/5.0
+2019-02-15T13:04:54.575Z - info: END > =========================================
+2019-02-15T13:06:22.127Z - info: START > =======================================
+2019-02-15T13:06:22.128Z - info: Authentication Type : http_signature
+2019-02-15T13:06:22.127Z - warn: Entered log directory does not exists. Taking default log directory ./log
+2019-02-15T13:06:22.128Z - info: Request Type : POST
+2019-02-15T13:06:22.128Z - info: signatureHeader : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="6fa01M/nYSMAmzbf+YUi44pfDPhNetWpeMVJhrHdRlo="
+2019-02-15T13:06:22.128Z - info: digest : SHA-256=7J0BRmDlxfgNS0SuSmWSNKJN6HoIx9YhfZGVqgbSmAM=
+2019-02-15T13:06:22.128Z - info: v-c-merchant-id : rappel_br
+2019-02-15T13:06:22.128Z - info: date : Fri, 15 Feb 2019 13:06:22 GMT
+2019-02-15T13:06:22.128Z - info: host : apitest.cybersource.com
+2019-02-15T13:06:22.128Z - info: signature : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="6fa01M/nYSMAmzbf+YUi44pfDPhNetWpeMVJhrHdRlo="
+2019-02-15T13:06:22.128Z - info: User-Agent : Mozilla/5.0
+2019-02-15T13:06:22.128Z - info: END > =========================================
+2019-02-15T13:08:19.624Z - info: START > =======================================
+2019-02-15T13:08:19.627Z - info: Authentication Type : http_signature
+2019-02-15T13:08:19.625Z - warn: Entered log directory does not exists. Taking default log directory ./log
+2019-02-15T13:08:19.627Z - info: Request Type : POST
+2019-02-15T13:08:19.627Z - info: signatureHeader : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="LtsZe5dC0V+7xvcArxAkxJn1G4Okr9gOqo4FNpSXxe4="
+2019-02-15T13:08:19.627Z - info: digest : SHA-256=7J0BRmDlxfgNS0SuSmWSNKJN6HoIx9YhfZGVqgbSmAM=
+2019-02-15T13:08:19.627Z - info: v-c-merchant-id : rappel_br
+2019-02-15T13:08:19.627Z - info: date : Fri, 15 Feb 2019 13:08:19 GMT
+2019-02-15T13:08:19.627Z - info: host : apitest.cybersource.com
+2019-02-15T13:08:19.627Z - info: signature : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="LtsZe5dC0V+7xvcArxAkxJn1G4Okr9gOqo4FNpSXxe4="
+2019-02-15T13:08:19.627Z - info: User-Agent : Mozilla/5.0
+2019-02-15T13:08:19.627Z - info: END > =========================================
+2019-02-15T13:10:25.542Z - info: START > =======================================
+2019-02-15T13:10:25.545Z - info: Authentication Type : http_signature
+2019-02-15T13:10:25.543Z - warn: Entered log directory does not exists. Taking default log directory ./log
+2019-02-15T13:10:25.545Z - info: Request Type : POST
+2019-02-15T13:10:25.546Z - info: signatureHeader : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="NT8Y95Tk0N25jUEFQJa+w1MslxY1xwARb2H/FuMbDxM="
+2019-02-15T13:10:25.546Z - info: digest : SHA-256=7J0BRmDlxfgNS0SuSmWSNKJN6HoIx9YhfZGVqgbSmAM=
+2019-02-15T13:10:25.546Z - info: v-c-merchant-id : rappel_br
+2019-02-15T13:10:25.546Z - info: date : Fri, 15 Feb 2019 13:10:25 GMT
+2019-02-15T13:10:25.546Z - info: host : apitest.cybersource.com
+2019-02-15T13:10:25.546Z - info: signature : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="NT8Y95Tk0N25jUEFQJa+w1MslxY1xwARb2H/FuMbDxM="
+2019-02-15T13:10:25.546Z - info: User-Agent : Mozilla/5.0
+2019-02-15T13:10:25.546Z - info: END > =========================================
