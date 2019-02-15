@@ -14,7 +14,7 @@ Assim o também o  fornecedor terá uma clientela fiel e constante, pois o varej
 
 1. Instale as dependencias;
 2. Configure-o em um servidor de sua preferência;
-3. É só usufruir da ferramenta
+3. É só usufruir da ferramenta;
 
 ### Pré Requisitos e Ferramentas Necessárias:
 
@@ -24,7 +24,6 @@ Assim o também o  fornecedor terá uma clientela fiel e constante, pois o varej
 * _(opcional)_ [Docker](https://docs.docker.com/install/) version 18.06.2-ce, build 6d37f41;
 
 ### Instalação local por npm
-
 
 1. **Rode o comando para instalar as dependencias básicas do Projeto:**
 ```
@@ -37,7 +36,7 @@ npm install
 npm install react-scripts@1.1.1
 ```
 
-1. E por último rode o comando abaixo para instalar as bibliotecas da VISA
+3. **E por último rode o comando abaixo para instalar as bibliotecas da VISA:**
 
 ```
 npm install cybersource-rest-client
@@ -49,51 +48,45 @@ Você pode também instalar pelo Docker pegando da imagem pública exposta no en
 
 [Visao-Rappel](https://cloud.docker.com/u/lorensov/repository/docker/lorensov/visao-rappel) - Imagem hospedada no [Docker Hub](https://hub.docker.com/?namespace=lorensov)
 
-End with an example of getting some data out of the system or using it for a little demo
+Usando o comando `docker pull lorensov/visao-rappel` você já pode ter em seu repositório de imagens local a nossa solução.
 
-## Running the tests
+## Como Executar:
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+* Após tudo instalado vá na pasta Raiz do projeto execute o seguinte comando:
 ```
-Give an example
+npm start
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
+* Caso tenha seguido o caminho do Docker você pode baixar a imagem do repositório público e executá-la com:
 ```
-Give an example
+docker run -t {{nome-da-imagem}}
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+* E aproveite a solução :D
 
 ## Feito com:
 
-* [Visa](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [React](https://maven.apache.org/) - Dependency Management
-* [Node](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Visa](https://developer.visa.com/) - API's VISA
+* [Visa](https://developer.visa.com/) - API's VISA
+* [React](https://reactjs.org/) - Biblioteca JavaScript para construção de interfaces de Usuário
+* [Node](https://nodejs.org/en/) - Motor de construção que utiliza o framework _"Chrome's V8 JavaScript engine."_
+* [Docker](https://www.docker.com/) - Docker é uma ferramenta feita para facilitar a criação, entrega e execução de aplicações usando _"containers"_. 
 
-## Versioning
+## Versionamento 
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Foi feito no GitHub de nosso [time Visão](https://github.com/orgs/time-visao/) e você sinta-se a vontade para entrar em contato com o time para maiores detalhes!
+E tudo está dentro do nosso repositório: [https://github.com/time-visao/visao-rappel](https://github.com/time-visao/visao-rappel)
+
 
 ## Autores - Time Visão
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Cayo Syllos** - [cayodesyllos](https://github.com/cayodesyllos)
+* **Leonardo Nunes** - [leonardogyn](https://github.com/leonardogyn)
+* **Lucian Lorens** - [lorensov](https://github.com/Lorensov)
+* **Michele Souza** - [michelebsouza](https://github.com/michelebsouza)
 
 ## Menções Honrosas
 
-Software criado no [Hackathon da Visa](http://hackathon19.com.br/regulamento.pdf) que aconteceu na Campus Party Brasil #12
+* Software criado no [Hackathon da Visa](http://hackathon19.com.br/regulamento.pdf) que aconteceu na Campus Party Brasil #12
 * Agradecimento aos mentores: Biaca Guerra, Marlon Itaboray, Bruno Terakado, Jessica Félix, André Grochowicz e Felipe Rendeiro;
 * Agradecimento especial a equipe [Visa e Cybersource](https://developer.visa.com/capabilities/cybersource) pelo apoio prestado;
-* 
+* E um grande abraço para a [Campus Party](https://brasil.campus-party.org/cpbr12/) que sempre marca nossas vidas com experiências inesquecíveis!!!
