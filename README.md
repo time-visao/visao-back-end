@@ -4,11 +4,11 @@ Trazer controle financeiro de forma segura, sem o risco de dados sensíveis para
 
 ## Descrição:
 
-O projeto busca trazer controle financeiro de forma segura, recorrente, livre de responsabilidades de dados sensíveis e menos burocrática, para os fornecedores e varejistas que usam a técnica de negociação chamada [Rapel](https://www.sdr.com.br/Ideias003/291.htm).
+O projeto busca trazer controle financeiro de forma segura, recorrente, livre de riscos de possuir dados sensíveis além de ser menos burocrático, para os fornecedores e varejistas que usam a técnica de negociação chamada [Rappel](https://www.sdr.com.br/Ideias003/291.htm).
 
-Com a Visao-Rappel o varejista consegue controlar melhor ao longo do ano o custo desembolsado por conta do grande volume de compras realizados para adquirir um desconto igualmente maior.
+Com a Visao-Rappel o varejista ele consegue cobrar e acompanhar o desconto pelo volume de compras realizado ao longo do ano anterior.
 
-Assim o também o  fornecedor terá uma clientela fiel e constante, pois o varejista irá se manter sustentável com menos percalços de gastos de grande valor, além de fornecer um controle de forma segura e recorrente e sem guardar dados bancários de clientes.
+Assim o varejista terá uma clientela fiel e constante, pois os fornecedores  terão melhor saúdae financeira com menos percalços de gastos de grande custos acumulados.
 
 ## Como Começar:
 
@@ -62,6 +62,10 @@ docker run -t {{nome-da-imagem}}
 ```
 
 * E aproveite a solução :D
+
+## Logins para Teste:
+* E-mail: teste
+* Senha: teste
 
 ## Feito com:
 
