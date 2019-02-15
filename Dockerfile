@@ -15,5 +15,7 @@ RUN npm install --silent
 RUN npm install react-scripts@1.1.1 -g --silent
 RUN npm install cybersource-rest-client
 
+COPY . .
+
 # start app
 CMD ["npm", "start"]
