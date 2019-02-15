@@ -562,3 +562,27 @@
 2019-02-15T13:10:25.546Z - info: signature : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="NT8Y95Tk0N25jUEFQJa+w1MslxY1xwARb2H/FuMbDxM="
 2019-02-15T13:10:25.546Z - info: User-Agent : Mozilla/5.0
 2019-02-15T13:10:25.546Z - info: END > =========================================
+2019-02-15T13:52:06.627Z - info: START > =======================================
+2019-02-15T13:52:06.629Z - info: Authentication Type : http_signature
+2019-02-15T13:52:06.628Z - warn: Entered log directory does not exists. Taking default log directory ./log
+2019-02-15T13:52:06.629Z - info: Request Type : POST
+2019-02-15T13:52:06.713Z - info: signatureHeader : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="Rm9SeYvU4z4uS1CngyxO7I8GHTpk7jXx4L8KoWBq4Mo="
+2019-02-15T13:52:06.713Z - info: digest : SHA-256=jgDS2hmfNw8CvX1MCwNM3mpFZiilZ096UsMpJQoqJlw=
+2019-02-15T13:52:06.713Z - info: v-c-merchant-id : rappel_br
+2019-02-15T13:52:06.714Z - info: date : Fri, 15 Feb 2019 13:52:06 GMT
+2019-02-15T13:52:06.714Z - info: host : apitest.cybersource.com
+2019-02-15T13:52:06.714Z - info: signature : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="Rm9SeYvU4z4uS1CngyxO7I8GHTpk7jXx4L8KoWBq4Mo="
+2019-02-15T13:52:06.714Z - info: User-Agent : Mozilla/5.0
+2019-02-15T13:52:06.714Z - info: END > =========================================
+2019-02-15T13:52:36.035Z - info: START > =======================================
+2019-02-15T13:52:36.036Z - info: Authentication Type : http_signature
+2019-02-15T13:52:36.035Z - warn: Entered log directory does not exists. Taking default log directory ./log
+2019-02-15T13:52:36.036Z - info: Request Type : POST
+2019-02-15T13:52:36.036Z - info: signatureHeader : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="U/70+hGk0RFzTqFF+poAwtlpsjprSERGScLvLi5ia3g="
+2019-02-15T13:52:36.036Z - info: digest : SHA-256=WHtxuiBjZL4ayT3MlRnkghGq/gxmkKp9WInRGFoRQNA=
+2019-02-15T13:52:36.036Z - info: v-c-merchant-id : rappel_br
+2019-02-15T13:52:36.036Z - info: date : Fri, 15 Feb 2019 13:52:36 GMT
+2019-02-15T13:52:36.036Z - info: host : apitest.cybersource.com
+2019-02-15T13:52:36.036Z - info: signature : keyid="1d1b2fec-4cdd-4d52-9c97-364c32fd9506", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="U/70+hGk0RFzTqFF+poAwtlpsjprSERGScLvLi5ia3g="
+2019-02-15T13:52:36.036Z - info: User-Agent : Mozilla/5.0
+2019-02-15T13:52:36.036Z - info: END > =========================================

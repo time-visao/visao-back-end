@@ -156,13 +156,13 @@ class Rappel extends Component {
         <Loading />
       ) : (
       <div  className="container-fluid">
-         <div style={{ display: 'none' }} class="myAlert-top alert alert-success ">
+         <div style={{ display: 'none', position : 'fixed' }} class="myAlert-top alert alert-success ">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">
               &times;
             </a>
             <strong>Sucesso!</strong> Pagamento foi processado e a partir de agora ocorrerá todo mês neste mesmo dia pelos próximos 12 meses.
           </div>
-          <div style={{ display: 'none' }} class="myAlert-top alert alert-danger">
+          <div style={{ display: 'none' , position : 'fixed'}} class="myAlert-top alert alert-danger">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">
               &times;
             </a>
@@ -176,7 +176,10 @@ class Rappel extends Component {
               />
               <Step title="Faixa 3" description={`A partir de R$ ${this.formatMoney(this.state.limite_4)}`} />
         </Steps>
-        
+        <Row>
+          {' '}
+          <br />
+        </Row>
          <Row>
           <AutoComplete
             style={{ width: 320 }}
@@ -191,17 +194,21 @@ class Rappel extends Component {
           <br />
         </Row>
         <Row>
-          <p>Nome: {this.state.selectedNome}</p>
-          <p>CNPJ: {this.state.selectedCNPJ}</p>
-          <p>Compras: {this.formatMoney(this.state.compras)}</p>
-          <p>Taxa Antecipação: {this.state.taxa_antecipacao}%</p>
-          <p>Taxa Alcançada: {this.state.taxa_alcancada}%</p>
-          <p>Rappel total: R${this.state.rappel_total}</p>
-          <p>Rappel Antecipado: R${this.state.rappel_antecipado}</p>
-          <p>Parcela Rappel: R${this.state.parcela_rappel}</p>
+          {' '}
+          <br />
+        </Row>
+        <Row>
+          <Col xs={24} lg={12} xl={12}> <p>Nome: {this.state.selectedNome}</p></Col>
+          <Col xs={24} lg={12} xl={12}> <p>CNPJ: {this.state.selectedCNPJ}</p></Col>
+          <Col xs={24} lg={12} xl={12}><p>Compras: {this.formatMoney(this.state.compras)}</p></Col>
+          <Col xs={24} lg={12} xl={12}> <p>Taxa Antecipação: {this.state.taxa_antecipacao}%</p></Col>
+          <Col xs={24} lg={12} xl={12}> <p>Rappel total: R${this.state.rappel_total}</p> </Col>
+          <Col xs={24} lg={12} xl={12}> <p>Rappel Antecipado: R${this.state.rappel_antecipado}</p> </Col>
+          <Col xs={24} lg={12} xl={12}> <p>Parcela Rappel: R${this.state.parcela_rappel}</p> </Col>
+                     
           {this.state.payment_enabled ? <Button onClick={() => {this.handlePay()}}>Agendar pagamento mensal</Button>
           : this.state.selectedCNPJ.length > 0 ? <div>
-            <p> Pagamento mensal ja agendado para todo mês no dia{new Date(this.state.ultima_parcela_paga).getDay()}</p>
+            <p> Pagamento mensal ja agendado para todo mês no dia: {new Date(this.state.ultima_parcela_paga).getDay()}</p>
             <p> Número de parcelas remanescentes: {12-parseInt(this.state.numero_parcelas_pagas)}</p>
           </div> : ''}
         </Row>

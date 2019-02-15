@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { Route, NavLink, BrowserRouter, Redirect, Switch } from 'react-router-dom'; //Import modules from react-router-dom
 import { connect } from 'react-redux';
 import { Layout, Menu, Icon } from 'antd';
-import PrivateRoute from './components/PrivateRoute';
 import './App.css';
-import LogoRosa from './assets/img/logo_o_zodio.png';
 const { Header, Content, Footer } = Layout;
 
 class DynamicImport extends Component {
@@ -71,11 +69,11 @@ class App extends Component {
       <div className="App">
         <BrowserRouter>
           <Layout>
-            {this.props.login.response ? (
+            { (
               <Header style={{ zIndex: 1, width: '100%', marginBottom: 10 }}>
                 <NavLink to="/portal/">
                   <div className="logo">
-                    <img src={LogoRosa} />
+                  <span></span>
                   </div>
                 </NavLink>
                 <Menu theme="light" mode="horizontal" style={{ lineHeight: '64px' }}>
@@ -94,25 +92,16 @@ class App extends Component {
                     </NavLink>
                   </Menu.Item>
                   
-                  <Menu.Item key="3">
-                    <NavLink to="/logout/">
-                      <Icon type="logout" />
-                      <span>Logout</span>
-                    </NavLink>
-                  </Menu.Item>
+                  
                 </Menu>
               </Header>
-            ) : (
-              ''
             )}
             <Content>
               <Switch>
                 <Route path="/" render={() => <Redirect to="login" />} exact />
-                <Route path="/login" render={() => <Login />} exact />
-                <PrivateRoute path="/portal" exact component={Portal} />
-                <PrivateRoute path="/rappel" exact component={Rappel} />
-                <PrivateRoute path="/cadastro" exact component={Cadastro} />
-                <PrivateRoute path="/logout" exact component={Logout} />
+                <Route path="/portal" exact component={Portal} />
+                <Route path="/rappel" exact component={Rappel} />
+                <Route path="/cadastro" exact component={Cadastro} />
               </Switch>
             </Content>
           </Layout>
