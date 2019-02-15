@@ -1,5 +1,9 @@
 # Visao-Rappel - Eficiência no pagamento do Rappel
 
+Trazer controle financeiro de forma segura, sem o risco de dados sensíveis para os fornecedores e varejistas que compram em grandes volumes.
+
+## Descrição:
+
 O projeto busca trazer controle financeiro de forma segura, recorrente, livre de responsabilidades de dados sensíveis e menos burocrática, para os fornecedores e varejistas que usam a técnica de negociação chamada [Rapel](https://www.sdr.com.br/Ideias003/291.htm).
 
 Com a Visao-Rappel o varejista consegue controlar melhor ao longo do ano o custo desembolsado por conta do grande volume de compras realizados para adquirir um desconto igualmente maior.
@@ -15,9 +19,9 @@ Assim o também o  fornecedor terá uma clientela fiel e constante, pois o varej
 ### Pré Requisitos e Ferramentas Necessárias:
 
 * Acesso a Internet;
-* Node v8.10.0;
-* Npm 3.5.2;
-* _(opcional)_ Docker version 18.06.2-ce, build 6d37f41;
+* [Node.js](https://nodejs.org/en/download/) v8.10.0;
+* [NPM](https://www.npmjs.com/get-npm) 3.5.2;
+* _(opcional)_ [Docker](https://docs.docker.com/install/) version 18.06.2-ce, build 6d37f41;
 
 ### Instalação local por npm
 
