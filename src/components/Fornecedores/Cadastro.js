@@ -317,13 +317,13 @@ class Cadastro extends Component {
       <div>
         <h1 className="page-title">Cadastro do Fornecedor</h1>
         <form onSubmit={this.handleSubmit} className="container-fluid">
-          <div style={{ display: 'none' }} class="myAlert-top alert alert-success ">
+          <div style={{ display: 'none', position : 'fixed' }} class="myAlert-top alert alert-success ">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">
               &times;
             </a>
             <strong>Sucesso!</strong> Cadastro efetuado com sucesso.
           </div>
-          <div style={{ display: 'none' }} class="myAlert-top alert alert-danger">
+          <div style={{ display: 'none', position : 'fixed' }} class="myAlert-top alert alert-danger">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">
               &times;
             </a>
