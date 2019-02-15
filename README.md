@@ -1,44 +1,91 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Visao-Rappel - Eficiência no pagamento do Rappel
 
-## Available Scripts
+Trazer controle financeiro de forma segura, sem o risco de dados sensíveis para os fornecedores e varejistas que compram em grandes volumes.
 
-In the project directory, you can run:
+## Descrição:
 
-### `npm start`
+O projeto busca trazer controle financeiro de forma segura, recorrente, livre de responsabilidades de dados sensíveis e menos burocrática, para os fornecedores e varejistas que usam a técnica de negociação chamada [Rapel](https://www.sdr.com.br/Ideias003/291.htm).
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Com a Visao-Rappel o varejista consegue controlar melhor ao longo do ano o custo desembolsado por conta do grande volume de compras realizados para adquirir um desconto igualmente maior.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Assim o também o  fornecedor terá uma clientela fiel e constante, pois o varejista irá se manter sustentável com menos percalços de gastos de grande valor, além de fornecer um controle de forma segura e recorrente e sem guardar dados bancários de clientes.
 
-### `npm test`
+## Como Começar:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Instale as dependencias;
+2. Configure-o em um servidor de sua preferência;
+3. É só usufruir da ferramenta;
 
-### `npm run build`
+### Pré Requisitos e Ferramentas Necessárias:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Acesso a Internet;
+* [Node.js](https://nodejs.org/en/download/) v8.10.0;
+* [NPM](https://www.npmjs.com/get-npm) 3.5.2;
+* _(opcional)_ [Docker](https://docs.docker.com/install/) version 18.06.2-ce, build 6d37f41;
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Instalação local por npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Rode o comando para instalar as dependencias básicas do Projeto:**
+```
+npm install
+```
 
-### `npm run eject`
+2. **E em seguida rode o comando:**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+npm install react-scripts@1.1.1
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **E por último rode o comando abaixo para instalar as bibliotecas da VISA:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm install cybersource-rest-client
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Instalação via Docker
 
-## Learn More
+Você pode também instalar pelo Docker pegando da imagem pública exposta no endereço abaixo:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Visao-Rappel](https://cloud.docker.com/u/lorensov/repository/docker/lorensov/visao-rappel) - Imagem hospedada no [Docker Hub](https://hub.docker.com/?namespace=lorensov)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Usando o comando `docker pull lorensov/visao-rappel` você já pode ter em seu repositório de imagens local a nossa solução.
+
+## Como Executar:
+
+* Após tudo instalado vá na pasta Raiz do projeto execute o seguinte comando:
+```
+npm start
+```
+* Caso tenha seguido o caminho do Docker você pode baixar a imagem do repositório público e executá-la com:
+```
+docker run -t {{nome-da-imagem}}
+```
+
+* E aproveite a solução :D
+
+## Feito com:
+
+* [API's da Visa pela CyberSource](https://www.cybersource.com/developers) - API de Autenticação e Pagamento
+* [React](https://reactjs.org/) - Biblioteca JavaScript para construção de interfaces de Usuário
+* [Node](https://nodejs.org/en/) - Motor de construção que utiliza o framework _"Chrome's V8 JavaScript engine."_
+* [Docker](https://www.docker.com/) - Docker é uma ferramenta feita para facilitar a criação, entrega e execução de aplicações usando _"containers"_. 
+
+## Versionamento 
+
+Foi feito no GitHub de nosso [time Visão](https://github.com/orgs/time-visao/) e você sinta-se a vontade para entrar em contato com o time para maiores detalhes!
+E tudo está dentro do nosso repositório: [https://github.com/time-visao/visao-rappel](https://github.com/time-visao/visao-rappel)
+
+
+## Autores - Time Visão
+
+* **Cayo Syllos** - [cayodesyllos](https://github.com/cayodesyllos)
+* **Leonardo Nunes** - [leonardogyn](https://github.com/leonardogyn)
+* **Lucian Lorens** - [lorensov](https://github.com/Lorensov)
+* **Michele Souza** - [michelebsouza](https://github.com/michelebsouza)
+
+## Menções Honrosas
+
+* Software criado no [Hackathon da Visa](http://hackathon19.com.br/regulamento.pdf) que aconteceu na Campus Party Brasil #12
+* Agradecimento aos mentores: Biaca Guerra, Marlon Itaboray, Bruno Terakado, Jessica Félix, André Grochowicz e Felipe Rendeiro;
+* Agradecimento especial a equipe [Visa e Cybersource](https://developer.visa.com/capabilities/cybersource) pelo apoio prestado;
+* E um grande abraço para a [Campus Party](https://brasil.campus-party.org/cpbr12/) que sempre marca nossas vidas com experiências inesquecíveis!!!
