@@ -65,7 +65,7 @@ docker run -t {{nome-da-imagem}}
 
 ## Feito com:
 
-* [API's da Visa pela CyberSource](https://www.cybersource.com/) - API de Autenticação e Pagamento
+* [API's da Visa pela CyberSource](https://www.cybersource.com/developers) - API de Autenticação e Pagamento
 * [React](https://reactjs.org/) - Biblioteca JavaScript para construção de interfaces de Usuário
 * [Node](https://nodejs.org/en/) - Motor de construção que utiliza o framework _"Chrome's V8 JavaScript engine."_
 * [Docker](https://www.docker.com/) - Docker é uma ferramenta feita para facilitar a criação, entrega e execução de aplicações usando _"containers"_. 
