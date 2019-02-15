@@ -1,0 +1,52 @@
+.icon {
+  margin-top: 8%;
+  text-align: center;
+}
+
+.modules {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.fade {
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+
+.fade-enter.fade-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.viewcard {
+  padding: 10%;
+
+  border-radius: 8%;
+  height: 200px;
+  width: 100%;
+  border: 1px solid rgb(230, 230, 230);
+  background-color: white;
+  color: rgb(180, 180, 180);
+  -webkit-transition: box-shadow 0.5s, border 0.5s;
+  transition: box-shadow 0.5s, border 0.5s;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.viewcard:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 5px -10px, rgba(0, 0, 0, 0.1) 0px 0px 4px 0px;
+  border: 1px solid rgb(24, 144, 255, 0.4);
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translate(0, 3em);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}

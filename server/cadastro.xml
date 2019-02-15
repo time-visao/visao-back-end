@@ -1,0 +1,16 @@
+<dados>
+    <pessoa>
+        <nrCPFCNPJ>61232037000130</nrCPFCNPJ>
+        <cdPessoa>cod</cdPessoa>
+        <dsNome>Cayo</dsNome>
+        <tpPessoa>J</tpPessoa>
+        <inFornecedor>1</inFornecedor>        
+        <contaCorrente>
+            <nrBanco>033</nrBanco>
+            <nrAgencia>0510</nrAgencia>
+            <dsConta>5357</dsConta>
+            <dsDigitoConta>7</dsDigitoConta>
+            <tpConta>01</tpConta>
+        </contaCorrente>
+    </pessoa>
+</dados>

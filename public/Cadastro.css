@@ -1,0 +1,31 @@
+.page-title{
+    font-size: 36px;
+    height: 1%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+
+.myAlert-top{
+    position: fixed;
+    top: 5px; 
+    left:2%;
+    width: 96%;
+}
+
+div.fullscreen {
+  position: absolute;
+  width:100%; 
+  height:960px; 
+  top: 0; 
+  left: 0; 
+  background-color: rgb(68, 151, 179);
+}
+
+.alert{
+    display: none;
+    z-index: 99;
+}
