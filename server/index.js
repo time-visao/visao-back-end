@@ -1,21 +1,12 @@
-var mailjet = require('node-mailjet').connect(
-  '510e9a56788082db786c3e605dedfc34',
-  'bc5f979541f754150aea16aa2049a89e',
-);
+
 var CreatePayment = require('./CreatePaymentInstrument');
-var path = require('path');
-var filename = path.join('./files', 'output.xlsx');
+var ProcessPayment = require('./ProcessPayment');
 const port = 8000;
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const fs = require('fs');
-const XLSX = require('xlsx');
-const mailer = require('./mailer');
-var pdf = require('html-pdf');
 const app = express();
 app.use(cors());
-var request = require('request');
 const { Pool, Client } = require('pg'); // node-postgres npm package
 
 const userDb = 'zodio';
@@ -45,7 +36,7 @@ async function getToken(req, res) {
       console.log(response.id);
       let token = response.id;
       console.log(req.body);
-      var found_cnpj = await client.query(`SELECT COUNT(*) FROM fornecedores WHERE CNPJ = '${req.body.input.CNPJ}'`);
+      var found_cnpj = await client.query(`SELECT COUNT(*) FROM visa_fornecedores WHERE CNPJ = '${req.body.input.CNPJ}'`);
       found_cnpj = found_cnpj.rows[0].count;
 
       if (found_cnpj == 0) {
@@ -75,8 +66,39 @@ async function getToken(req, res) {
   );
 }
 
+async function handlePagamento(req, res) {
+  ProcessPayment.processPayment(
+    req.body.input.token,
+    req.body.input.parcela_rappel,
+    async response => {
+        console.log(req.body.input);
+        await client.query(
+          `UPDATE visa_fornecedores SET numero_parcelas_pagas = 1,
+           ultima_parcela_paga = '${new Date().toDateString()}',
+           parcelaRappel = '${req.body.input.parcela_rappel}', WHERE cnpj = '${req.body.input.selectedCNPJ}';`,
+          (err, results) => {
+            if (err) {
+              return res.send(err);
+            } else {
+              console.log("deu bom")
+              return res.json({
+                data: results,
+              });
+            }
+          },
+        );
+    }
+  );
+}
+
+
+
 app.post('/', async function(req, res) {
   getToken(req, res);
+});
+
+app.post('/pagamento', async function(req, res) {
+  handlePagamento(req, res);
 });
 
 app.get('/fornecedores_total', (req, res) => {
